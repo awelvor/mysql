@@ -29,6 +29,6 @@ jobs:
           mysql -h 127.0.0.1 -P 3306 -uroot -proot_password test_db < schema.sql
           # Here you would typically run your application's tests against this DB
       - name: Run application tests
-        run: |
+        run: mysql -h 127.0.0.1 -P 3306 -uroot -proot_password test_db < data.sql
           # Your application's test commands that connect to the MySQL service
-          echo "Running tests against MySQL..."
+         
