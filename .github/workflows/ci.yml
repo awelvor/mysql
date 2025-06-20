@@ -1,4 +1,4 @@
-name: MySQL CI Example
+name: MySQL CI Example2
 
 on: [push]
 
